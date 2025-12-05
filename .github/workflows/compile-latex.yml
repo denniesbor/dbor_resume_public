@@ -1,30 +1,23 @@
-name: Compile LaTeX
-
-on:
-  push:
-    branches: [ main ]
-
+name: Build LaTeX document
+on: [push]
 jobs:
-  build:
+  build_latex:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Compile LaTeX
-        uses: xu-cheng/latex-action@v2
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+        
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: main.tex
           
-      - name: Upload PDF
-        uses: actions/upload-artifact@v3
-        with:
-          name: cv.pdf
-          path: main.pdf
-          
-      - name: Commit PDF
+      - name: Commit PDF to repo
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add main.pdf
-          git commit -m "Update compiled PDF" || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f main.pdf
+          git commit -m "Auto-compile PDF [skip ci]" || exit 0
           git push
