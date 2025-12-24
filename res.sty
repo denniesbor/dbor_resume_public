@@ -1,6 +1,4 @@
 % res.sty - Resume Style File
-% Custom style for professional resume formatting
-
 \ProvidesPackage{res}
 
 \usepackage{mathptmx}
@@ -13,8 +11,9 @@
 \usepackage{fancyhdr}
 \usepackage{xcolor}
 
+% The light background color requested
 \definecolor{mainbg}{rgb}{0.95, 0.96, 0.97}
-\pagecolor{mainbg}
+% \pagecolor{mainbg}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -49,6 +48,13 @@
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-5pt}
 }
 
