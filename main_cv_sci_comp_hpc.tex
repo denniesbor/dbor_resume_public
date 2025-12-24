@@ -1,0 +1,108 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{res}
+\hypersetup{pdftitle={Dennies Bor - Scientific Computing \& HPC CV}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Dennies Bor}} & Email: \href{mailto:dbor@gmu.edu}{dbor@gmu.edu}\\
+  GitHub: \href{https://github.com/denniesbor}{github.com/denniesbor} & LinkedIn: \href{https://linkedin.com/in/denniesbor}{linkedin.com/in/denniesbor} \\
+  Website: \href{https://denniesbor.com}{denniesbor.com} & Scholar: \href{https://scholar.google.com/citations?user=mnet84cAAAAJ}{Google Scholar} \\
+\end{tabular*}
+
+\section{Professional Summary}
+Scientific computing researcher developing physics-based simulations and end-to-end modeling pipelines for infrastructure and space-environment risk. Strong background in numerical methods, nonlinear optimization, uncertainty quantification, and scalable workflows for large scenario studies.
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Numerical Methods}{ODE/PDE methods (Euler, RK4), iterative solvers (SOR), finite differences, particle/field simulation fundamentals.}
+  \resumeSubItem{Optimization \& UQ}{Nonlinear optimization (Pyomo, IPOPT), scenario analysis, sensitivity studies, probabilistic Monte Carlo simulation.}
+  \resumeSubItem{Scientific Programming}{Python (NumPy, SciPy, Pandas, Matplotlib), MATLAB; profiling, vectorization, modular pipeline design.}
+  \resumeSubItem{HPC/Workflow}{Batch-style parameter sweeps, reproducible environments, structured configs/logging, cloud HPC experience (AWS EC2).}
+  \resumeSubItem{Geospatial (supporting)}{GDAL/geopandas/rasterio for spatial preprocessing, network/topology datasets.}
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {George Mason University}{Fairfax, VA, USA}
+    {PhD in Earth Systems and Geoinformation Sciences (Advisor: Dr. Edward Oughton)}{Sep 2023 -- Present}
+    {\footnotesize\textit{\textbf{Selected Coursework:} Computational Physics, Applied Electromagnetics, Atmospheric Physics, Spatial Computing}}\\
+    {\footnotesize\textit{\textbf{GPA:} 3.85}}
+  \resumeSubheading
+    {Technical University of Kenya}{Nairobi, Kenya}
+    {BEng in Aeronautical Engineering (First Class Honors)}{Sep 2013 -- May 2019}
+\resumeSubHeadingListEnd
+
+\section{Research Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Graduate Research Assistant}{George Mason University, VA, USA}
+  {Computational Modeling, Optimization, Scenario Studies}{May 2022 -- Present}
+  \resumeItemListStart
+    \item Developed computational models integrating numerical simulation, statistical scenario generation, and optimization to quantify infrastructure resilience and socio-economic impacts.
+    \item Built reproducible, multi-stage pipelines for hazard-to-impact studies (preprocess $\rightarrow$ simulation $\rightarrow$ postprocess $\rightarrow$ analysis).
+  \resumeItemListEnd
+
+  \resumeSubheading{Engineering Intern}{Broglio Space Center, Malindi, Kenya}
+  {Satellite Operations, RF Systems}{Aug 2018 -- Nov 2018}
+  \resumeItemListStart
+    \item Supported satellite tracking and telemetry processing; assisted RF communications and operational data workflows.
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Selected Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{C-SWIM}: Coupled Space Weather Impact Model \,|\, \href{https://github.com/denniesbor/C-SWIM}{C-SWIM}}{}
+  \resumeItemListStart
+    \item End-to-end hazard-to-impact pipeline coupling space-weather scenario design, power-grid response modeling, and socio-economic impact estimation.
+    \item Designed workflows for repeated scenario runs and reproducible postprocessing; results dashboard: \href{https://denniesbor.me/portfolio/space-weather-grid}{space-weather-grid}.
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{horton\_grid}: Benchmark Test Grid for GIC Simulation \,|\, \href{https://github.com/denniesbor/horton_grid}{horton\_grid}}{}
+  \resumeItemListStart
+    \item Reproduced and validated geomagnetically induced current simulation workflows on the Horton--Boteler (2013) test grid for benchmarking.
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{sat-model}: Space Environment Sensitivity + Fleet Impacts \,|\, \href{https://github.com/denniesbor/sat-model}{sat-model}}{}
+  \resumeItemListStart
+    \item Implemented modular analysis including radiation/SEE risk, orbital drag/propellant estimation (MSIS + SGP4), and capacity/economic impact workflows.
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{tfpy}: Frequency-Domain + Neural Approaches for GIC Prediction \,|\, \href{https://github.com/denniesbor/tfpy}{tfpy}}{}
+  \resumeItemListStart
+    \item Implemented transfer-function baselines and neural architectures (CNN/GRU/LSTM with attention), including physics-informed modeling components.
+    \item Built evaluation and comparison scripts for storm-time datasets and reproducible analysis.
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Selected Publications \& Preprints}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{A Physics-Engineering-Economic Model Coupling Approach for Estimating Socio-economic Impacts of Space Weather (Primary Author)}
+  {\href{https://arxiv.org/abs/2412.18032}{arXiv:2412.18032} \,|\, Code: \href{https://github.com/denniesbor/C-SWIM}{C-SWIM} \,|\, Dashboard: \href{https://denniesbor.me/portfolio/space-weather-grid}{space-weather-grid}}
+
+  \resumeSubItem{A Reproducible Method for Mapping Electricity Transmission Infrastructure for Space Weather Risk Assessment (Co-Author)}
+  {\href{https://arxiv.org/abs/2412.17685}{arXiv:2412.17685}}
+
+  \resumeSubItem{GIC-Related Observations During the May 2024 Geomagnetic Storm in the United States (Co-Author)}
+  {\href{https://arxiv.org/abs/2507.07009}{arXiv:2507.07009}}
+
+\resumeSubHeadingListEnd
+
+\section{Professional Development}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {National Center for Atmospheric Research}{Boulder, CO, USA}
+    {Early Career Faculty Innovators Program}{2023 -- 2025}
+  \resumeSubheading
+    {African Institute of Mathematical Sciences}{Cape Town, South Africa}
+    {Africa Data Science Intensive Program}{2022}
+\resumeSubHeadingListEnd
+
+\section{References}
+Available upon request.
+
+\end{document}

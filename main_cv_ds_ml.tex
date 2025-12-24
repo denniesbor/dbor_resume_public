@@ -1,0 +1,111 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{res}
+\hypersetup{pdftitle={Dennies Bor - Data Science \& ML CV}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Dennies Bor}} & Email: \href{mailto:dbor@gmu.edu}{dbor@gmu.edu}\\
+  GitHub: \href{https://github.com/denniesbor}{github.com/denniesbor} & LinkedIn: \href{https://linkedin.com/in/denniesbor}{linkedin.com/in/denniesbor} \\
+  Website: \href{https://denniesbor.com}{denniesbor.com} & Scholar: \href{https://scholar.google.com/citations?user=mnet84cAAAAJ}{Google Scholar} \\
+\end{tabular*}
+
+\section{Professional Summary}
+Data science \& machine learning practitioner with strengths in time-series modeling, signal processing, and applied ML for scientific and infrastructure systems. Experienced in building reproducible pipelines, benchmarking models against classical baselines, and communicating results via dashboards and open-source code.
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Machine Learning}{Deep learning (CNN/GRU/LSTM, attention), physics-informed learning, object detection (YOLO), feature engineering, model benchmarking.}
+  \resumeSubItem{Statistics \& Uncertainty}{Probabilistic simulation (Monte Carlo), hypothesis testing, sensitivity analysis, error analysis and validation workflows.}
+  \resumeSubItem{Time Series \& Signal Processing}{Frequency-domain analysis, matched filtering concepts, coherence estimation, Welch PSD, spectral features.}
+  \resumeSubItem{Scientific Programming}{Python (NumPy, SciPy, Pandas, Matplotlib), PyTorch/TensorFlow (project-dependent), reproducible notebooks and scripts.}
+  \resumeSubItem{Data \& Tooling}{Git, Linux, Docker, GitHub Actions; experiment organization, logging, and result tracking.}
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {George Mason University}{Fairfax, VA, USA}
+    {PhD in Earth Systems and Geoinformation Sciences (Advisor: Dr. Edward Oughton)}{Sep 2023 -- Present}
+    {\footnotesize\textit{\textbf{Selected Coursework:} Earth Image Processing, Hyperspectral Imaging, Spatial Computing, Atmospheric Physics, Computational Physics}}\\
+    {\footnotesize\textit{\textbf{GPA:} 3.85}}
+  \resumeSubheading
+    {Technical University of Kenya}{Nairobi, Kenya}
+    {BEng in Aeronautical Engineering (First Class Honors)}{Sep 2013 -- May 2019}
+\resumeSubHeadingListEnd
+
+\section{Research Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Graduate Research Assistant}{George Mason University, VA, USA}
+  {ML-Enabled Risk Modeling, Time Series, Spatial Data Products}{May 2022 -- Present}
+  \resumeItemListStart
+    \item Built reproducible research pipelines integrating observational data, predictive modeling, and validation for infrastructure and space-environment risk studies.
+    \item Developed benchmarking workflows comparing classical models (e.g., transfer functions / physics baselines) against ML approaches on real event datasets.
+  \resumeItemListEnd
+
+  \resumeSubheading{Engineering Intern}{Broglio Space Center, Malindi, Kenya}
+  {Satellite Operations, RF Systems}{Aug 2018 -- Nov 2018}
+  \resumeItemListStart
+    \item Supported satellite tracking, telemetry processing, and RF communication system operations for Earth observation missions.
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Selected Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{tfpy}: GIC Prediction Model Benchmarking \,|\, \href{https://github.com/denniesbor/tfpy}{tfpy}}{}
+  \resumeItemListStart
+    \item Comparative evaluation of traditional transfer-function methods versus neural network approaches for geomagnetically induced current prediction.
+    \item Implemented deep learning variants (CNN/GRU/LSTM with attention) and physics-informed modeling components; organized reproducible runs for analysis.
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{substation-assets-identification}: Substation Asset Identification (YOLO) \,|\, \href{https://github.com/denniesbor/substation-assets-identification}{substation-assets-identification}}{}
+  \resumeItemListStart
+    \item Object detection workflow for identifying substation assets (e.g., transformers) in overhead imagery using YOLO.
+    \item Curated project structure for training/inference and repeatable experimentation.
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{twitter\_political\_polarization}: Polarization via Sentiment Analysis \,|\, \href{https://github.com/denniesbor/twitter_political_polarization}{twitter\_political\_polarization}}{}
+  \resumeItemListStart
+    \item Large-scale sentiment analysis of political discourse across policy topics; statistical comparison across groups.
+    \item Results dashboard: \href{https://denniesbor.github.io/twitter_political_polarization/}{twitter\_political\_polarization}.
+  \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{C-SWIM}: Coupled Space Weather Impact Model \,|\, \href{https://github.com/denniesbor/C-SWIM}{C-SWIM}}{}
+  \resumeItemListStart
+    \item End-to-end pipeline coupling space-weather hazard scenarios, power-grid response modeling, and socio-economic impact estimation.
+    \item Dashboard: \href{https://denniesbor.me/portfolio/space-weather-grid}{space-weather-grid}.
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Selected Publications \& Preprints}
+\resumeSubHeadingListStart
+  \resumeSubItem{Quantifying Political Polarization on Key Policy Issues Using Sentiment Analysis (Primary Author)}
+  {\href{https://doi.org/10.48550/arXiv.2302.07775}{arXiv:2302.07775} \,|\, Results: \href{https://denniesbor.github.io/twitter_political_polarization/}{twitter\_political\_polarization} \,|\, Code: \href{https://github.com/denniesbor/twitter_political_polarization}{twitter\_political\_polarization}}
+
+  \resumeSubItem{Socio-economic impact of electricity grid infrastructure failure due to severe space weather events (Primary Author)}
+  {\href{https://arxiv.org/abs/2412.18032}{arXiv:2412.18032} \,|\, Code: \href{https://github.com/denniesbor/C-SWIM}{C-SWIM} \,|\, Dashboard: \href{https://denniesbor.me/portfolio/space-weather-grid}{space-weather-grid}}
+
+  \resumeSubItem{A Reproducible Method for Mapping Electricity Transmission Infrastructure for Space Weather Risk Assessment (Co-Author)}
+  {\href{https://arxiv.org/abs/2412.17685}{arXiv:2412.17685}}
+
+  \resumeSubItem{GIC-Related Observations During the May 2024 Geomagnetic Storm in the United States (Co-Author)}
+  {\href{https://arxiv.org/abs/2507.07009}{arXiv:2507.07009}}
+\resumeSubHeadingListEnd
+
+\section{Professional Development}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {National Center for Atmospheric Research}{Boulder, CO, USA}
+    {Early Career Faculty Innovators Program}{2023 -- 2025}
+  \resumeSubheading
+    {African Institute of Mathematical Sciences}{Cape Town, South Africa}
+    {Africa Data Science Intensive Program}{2022}
+\resumeSubHeadingListEnd
+
+\section{References}
+Available upon request.
+
+\end{document}

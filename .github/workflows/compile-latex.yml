@@ -1,23 +1,38 @@
-name: Build LaTeX document
+name: Build LaTeX documents
 on: [push]
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-        
-      - name: Compile LaTeX document
+
+      - name: Compile LaTeX documents
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: main.tex
-          
-      - name: Commit PDF to repo
+          root_file: |
+            main_cv_ds_ml.tex
+            main_cv_geospatial_rs.tex
+            main_cv_sci_comp_hpc.tex
+            main_cv_swe_cloud.tex
+            main_cv_postdoc.tex
+
+      - name: Commit PDFs to repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f main.pdf
-          git commit -m "Auto-compile PDF [skip ci]" || exit 0
+
+          git add -f \
+            main_cv_ds_ml.pdf \
+            main_cv_geospatial_rs.pdf \
+            main_cv_sci_comp_hpc.pdf \
+            main_cv_swe_cloud.pdf \
+            main_cv_postdoc.pdf
+
+          git commit -m "Auto-compile CV PDFs [skip ci]" || exit 0
           git push
+
